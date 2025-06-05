@@ -1,0 +1,15 @@
+services:
+  node:
+    build:
+      context: .devcontainer/node-container
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
+    command: sleep infinity
+  python:
+    build:
+      context: .devcontainer/python-container
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
+    command: sleep infinity

@@ -1,0 +1,29 @@
+{
+    "name": "Python Container",
+    "dockerComposeFile": [
+        "../../docker-compose.yml"
+    ],
+    "service": "python",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/python-src",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-python.mypy-type-checker",
+                "charliermarsh.ruff"
+            ],
+            "settings": {
+                "[python]": {
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll.ruff": "explicit",
+                        "source.organizeImports.ruff": "explicit"
+                    },
+                    "editor.defaultFormatter": "charliermarsh.ruff",
+                    "editor.formatOnSave": true
+                }
+            }
+        }
+    }
+}

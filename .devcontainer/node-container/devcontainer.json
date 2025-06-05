@@ -1,0 +1,22 @@
+{
+    "name": "Node Container",
+    "dockerComposeFile": [
+        "../../docker-compose.yml"
+    ],
+    "service": "node",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/node-src",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "iomejs.biome"
+            ],
+            "settings": {
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.eslint": "explicit"
+                }
+            }
+        }
+    }
+}
